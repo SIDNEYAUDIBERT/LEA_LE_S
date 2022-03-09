@@ -35,33 +35,74 @@
 
 <main>
 
-    <h1 class="main__title">The standard Lorem Ipsum passage, used since the 1500s</h1>
-    <h2>Liste des agents : </h2>
+    <div class="main__nav">
 
-
-    <div class="main__profiles-container">
-
-        <div class="card">
-
-            <h2 class="card__title"><a href="Corinne.html"><i class="fas fa-user-alt"></i> Corinne</a></h2>
-
+        <div class="main--nav-left">
+            <h2 class="main__nav-title">Dashboard</h2>
+            <span class="main__nav-date">Monday 02 mars 2021</span>
         </div>
 
-        <div class="card">
-
-            <h2 class="card__title"><a href="Rapheal.html"><i class="fas fa-user-alt"></i> Corinne</a></h2>
-
-
+        <div class="main--nav-right">
+            <a class="main__nav-buttun"><i class="fas fa-plus"></i> New profile</a>
         </div>
 
-        <div class="card">
+    </div>
 
-            <h2 class="card__title"><a href="Gisele.html"><i class="fas fa-user-alt"></i> Raphael</a></h2>
+    <div class="main__jumbotron">
 
-            <div class="card__container">
-                <span>zed</span>
-                <span> voir le Profile </span>         
+        <div class="main--jumbotron-left">
+            <h1 class="main__jumbotron-title">Bienvenue sur votre espace Go Security</h1>
+            <p >The standard Lorem Ipsum passage, used since the 1500s</p>
+        </div>
+
+        <div class="main--jumbotron-right">
+            <img src="./img/jumbotron.png" alt="" class="main__jumbotron-img">
+        </div>
+    
+    </div>
+
+
+
+
+    <div class="profiles">
+
+        <h2 class="profiles-title">Liste des agents : </h2>
+
+        <div class="profiles-container">
+        
+            <div class="card">
+
+                <h2 class="card__title"><a href="Corinne.html"><i class="fas fa-user-alt"></i> Corinne</a></h2>
+
+                <div class="card__container">
+                    <span class="card__container-light"><i class="fas fa-edit"></i> <i class="fas fa-trash"></i></span>
+                    <span><a href="Corinne.html" class="card__container-link"> voir le Profile <i class="fas fa-chevron-right"></i></a></span>         
+                </div>
+
             </div>
+
+            <div class="card">
+
+                <h2 class="card__title"><a href="Rapheal.html"><i class="fas fa-user-alt"></i> Corinne</a></h2>
+                
+                <div class="card__container">
+                    <span class="card__container-light"><i class="fas fa-edit"></i> <i class="fas fa-trash"></i></span>
+                    <span><a href="Corinne.html" class="card__container-link"> voir le Profile <i class="fas fa-chevron-right"></i></a></span>         
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <h2 class="card__title"><a href="Gisele.html"><i class="fas fa-user-alt"></i> Raphael</a></h2>
+
+                <div class="card__container">
+                    <span class="card__container-light"><i class="fas fa-edit"></i> <i class="fas fa-trash"></i></span>
+                    <span><a href="Corinne.html" class="card__container-link"> voir le Profile <i class="fas fa-chevron-right"></i></a></span>         
+                </div>
+                
+            </div>
+
         </div>
 
     </div>

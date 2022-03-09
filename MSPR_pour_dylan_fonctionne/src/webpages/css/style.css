@@ -18,6 +18,8 @@
     --primary : #379EC1 ; 
     --recondary : #659224 ; 
     --light : #f5f7fbbb  ; 
+    --grey : #B0B0B0;
+    --dark: #888888;
 }
 
 body {
@@ -31,12 +33,11 @@ body {
     top:0 ;
     left: 0 ;
     height:100vh; 
-    width:15%;
+    width:18%;
     background-color: #fff;
-    border-radius:0 24px 24px 0;
-    -webkit-box-shadow: 2px 0px 29px -6px rgba(0,0,0,0.34);
-    -moz-box-shadow: 2px 0px 29px -6px rgba(0,0,0,0.34);
-    box-shadow: 2px 0px 29px -6px rgba(0,0,0,0.34);
+    -webkit-box-shadow: 2px 0px 12px -6px rgba(0,0,0,0.14);
+    -moz-box-shadow: 2px 0px 12px -6px rgba(0,0,0,0.14);
+    box-shadow: 2px 0px 12px -6px rgba(0,0,0,0.14);
 }
 
 .header__nav {
@@ -49,18 +50,30 @@ body {
 }
 
 .header__nav li {
-    padding:0.5rem 0; 
+    padding:0.8rem 0; 
+    color: var(--grey);
+    font-family: 'Poppins Light';
+    font-size: 1.2rem;
+}
+
+.header__nav i {
+    padding-right: 1rem;
+}
+
+.header__nav li:hover {
+    color: var(--primary);
+    transition-duration: 400ms;
 }
 
 
 .header__logo img {
-    width:100%;
+    width:85%;
     margin:auto;
-    padding:6rem 0;
+    padding:4rem 0 6rem 1rem;
 }
 
 main {
-    margin-left : 20vw;
+    margin-left : 18vw;
     padding:4rem;
 }
 
@@ -69,17 +82,24 @@ main {
     font-family: "Poppins Medium";
 }
 
+.profiles {
+    margin:5rem 0;
+}
 
-.main__profiles-container {
-    margin:auto;
+.profiles-container {
+    margin:4rem auto;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
 
+.profiles-title {
+    font-size: 1.5rem;
+    font-family: 'Poppins Medium';
+}
+
 .card {
-    margin:4rem 0;
     width:32%; 
     background-color: #fff;
     border-radius:0 10px 10px 0;
@@ -94,7 +114,7 @@ main {
 }
 
 .card__title a {
-    color:var(--primary);
+    color:var(--dark);
     text-decoration: none;
 }
 
@@ -106,10 +126,70 @@ main {
     padding:2rem 2rem;
     display: flex;
     justify-content: space-between;
-    margin-top: 2rem;
+    align-items: flex-end;
+}
+
+.card__container-light {
+    color: var(--grey);
+    font-size: 0.8rem;
+}
+
+.card__container-link {
     color: var(--recondary);
 }
 
 .card__container i {
     padding-left: 0.5rem;
+}
+
+.main__nav {
+    display : flex; 
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom:2rem;
+    width:95%;
+}
+
+.main__nav-title {
+    font-size: 1.5rem;
+    font-family: 'Poppins Medium';
+    padding-bottom: 0.5rem;
+
+}
+
+.main__nav-date {
+    color: var(--grey); 
+}
+
+.main__jumbotron {
+    background-color: rgba(163,237,216,0.4);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    position:relative;
+    padding:5rem 2rem;
+    margin:1rem 0;
+}
+
+
+.main__jumbotron-img {
+    position:absolute; 
+    right:2rem ; 
+    top : -2rem ;
+    height:140%;
+}
+
+.main__jumbotron-title {
+    font-size: 2rem;
+    padding:1rem 0;
+}
+
+.main__nav-buttun {
+    color: var(--recondary); 
+    background-color: rgba(163,237,216,0.05);
+    border : solid 1px var(--recondary);
+    border-radius:25px;
+    padding:0.8rem 1rem; 
+
 }
