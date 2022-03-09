@@ -162,6 +162,16 @@ main {
     color: var(--grey); 
 }
 
+.main__nav-link {
+    color: var(--grey); 
+    text-decoration: none;
+}
+
+.main__nav-link:hover {
+    color: var(--primary);
+    transition-duration: 400ms;
+}
+
 .main__jumbotron {
     background-color: rgba(163,237,216,0.4);
     border-radius: 10px;
@@ -193,3 +203,36 @@ main {
     padding:0.8rem 1rem; 
 
 }
+
+
+.main__nav-name {
+    color: var(--grey);
+}
+
+.card__title-profil {
+    font-size: 1.5rem;
+    padding: 4rem 0 1rem 1.5rem;
+}
+
+.card__title-subtitle {
+    font-size: 1.2rem;
+    padding: 0 0 4rem 1.5rem;
+
+}
+
+.card--secondary {
+    background-color: rgba(244,223,100,0.35);
+
+}
+
+
+
+.card-profile-img {
+    width:100%;
+    margin-top: -3rem;
+}
+
+.padding {
+    padding:1.5rem;
+} 
+

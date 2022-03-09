@@ -1,21 +1,123 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
-    <title>Votre fiche agent</title>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/reset.css">    
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Document</title>
+
+    <script src="https://kit.fontawesome.com/45e38e596f.js" crossorigin="anonymous"></script>
 </head>
-Nom : Berthier Prénom : Corine
+<body>
 
-<li>Equipement : </li>
-<li>Mousqueton, Talkies-walkies, Lampe-torche, Tasers, Porte-menottes</li>
+<header class="header">
 
-<img src="https://github.com/SIDNEYAUDIBERT/MSPR1/blob/main/Corinne/Corinne.jpg?raw=true" >
+    <nav class="header__nav">
 
-<ul>
-    <li><a href="/index.html">Accueil</a></li>
-    <!-- <li><a href="#news">News</a></li>
-     <li><a href="#contact">Contact</a></li>
-     <li style="float:right"><a  href="#about">About</a></li> -->
-</ul>
+        <div class="header__logo">
+            <img src="img/logo.png" alt="">
+        </div>
+
+        <ul>
+            <li><a href="index.html" class="main__nav-link"><i class="fas fa-home"></i> Accueil </a> </li>
+            <li><i class="fas fa-user-alt"></i>  Mon Profile</li>
+            <li><i class="fas fa-cog"></i>  Paramètres</li>
+        </ul>
+    </nav>
+
+</header>
+
+
+<main>
+
+    <div class="main__nav">
+
+        <div class="main--nav-left">
+            <h2 class="main__nav-title">Mon profil</h2>
+            <span class="main__nav-date"><a href="index.html" class="main__nav-link"><i class="fas fa-chevron-left"></i> Retourner à l'accueil</a></span>
+        </div>
+
+        <div class="main--nav-right">
+            <span class="main__nav-name">    Nom : Berthier Prénom : Corine            </span>
+        </div>
+
+    </div>
+
+    <div class="main__jumbotron">
+
+        <div class="main--jumbotron-left">
+            <h1 class="main__jumbotron-title">Espace personel</h1>
+            <p >The standard Lorem Ipsum passage, used since the 1500s</p>
+        </div>
+
+        <div class="main--jumbotron-right">
+            <img src="./img/jumbotron.png" alt="" class="main__jumbotron-img">
+        </div>
+    
+    </div>
+
+
+
+
+    <div class="profiles">
+
+        <h2 class="profiles-title">Liste des agents : </h2>
+
+        <div class="profiles-container">
+        
+            <div class="card card--secondary">
+
+                <h2 class="card__title-profil"><i class="fas fa-user-alt"></i> Prénom : Corine</h2>
+                <h3 class="card__title-subtitle">Nom : Berthier </h3>
+                
+
+            </div>
+
+            <div class="card">
+
+                <h2 class="card__title-profil"><i class="fas fa-tools"></i> Equipements</h2>
+                
+                <div class="padding">
+                    <span>Mousqueton, Talkies-walkies, Lampe-torche, Tasers, Porte-menottes</span>         
+
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <img src="https://github.com/SIDNEYAUDIBERT/MSPR1/blob/main/Corinne/Corinne.jpg?raw=true" class="card-profile-img">
+
+                
+            </div>
+
+        </div>
+
+    </div>
+   
+    Nom : Berthier Prénom : Corine
+
+    <li>Equipement : </li>
+    <li>Mousqueton, Talkies-walkies, Lampe-torche, Tasers, Porte-menottes</li>
+
+    <img src="https://github.com/SIDNEYAUDIBERT/MSPR1/blob/main/Corinne/Corinne.jpg?raw=true" >
+
+    <ul>
+        <li><a href="/index.html">Accueil</a></li>
+        <!-- <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li style="float:right"><a  href="#about">About</a></li> -->
+    </ul>
+
+
+</main>
+    
+
+
 
 </html>
