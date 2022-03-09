@@ -40,6 +40,33 @@ body {
     box-shadow: 2px 0px 12px -6px rgba(0,0,0,0.14);
 }
 
+
+@media (max-width:750px) {
+    .header {
+        position: initial;
+        display: flex;
+        flex-direction: row;
+        height:auto;
+        width:100%;
+    }
+
+
+
+    .header__logo img {
+        display: none;
+    }
+
+    .header__list {
+        display:flex;
+    }
+
+    .header__list li {
+        margin:1rem 1rem;
+    }
+
+
+}
+
 .header__nav {
     display:flex;
     flex-direction: column;
@@ -77,6 +104,13 @@ main {
     padding:4rem;
 }
 
+@media (max-width:750px) {
+    main {
+        margin-left : 0;
+        padding:4rem;
+    }
+}
+
 .main__title {
     font-size: 2rem;
     font-family: "Poppins Medium";
@@ -107,6 +141,7 @@ main {
     -moz-box-shadow: 2px 0px 12px -6px rgba(0,0,0,0.14);
     box-shadow: 2px 0px 12px -6px rgba(0,0,0,0.14);
 }
+
 
 .card__title {
     font-size: 1.5rem;
@@ -149,6 +184,21 @@ main {
     flex-wrap: wrap;
     padding-bottom:2rem;
     width:95%;
+}
+
+
+@media (max-width : 750px) {
+
+    .card {
+        width:100%;
+        margin: 2rem 0;
+    }
+
+    .card img {
+        margin-top: 2rem;
+        height:auto;
+    }
+
 }
 
 .main__nav-title {
